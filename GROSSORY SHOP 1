@@ -1,19 +1,15 @@
-#include <stdio.h>
+##include <stdio.h>
 #include <string.h>
 #include <math.h>
 #include <stdlib.h>
 
-int main() 
-{
-    int A4sheet,Pen,Pencil,Eraser;
-    scanf("%d",&A4sheet);
-    scanf("%d",&Pen);
-    scanf("%d",&Pencil);
-    scanf("%d",&Eraser);
+int main() {
+    int a4sheet, pen, pencil, eraser;
+    scanf("%d %d %d %d", &a4sheet, &pen, &pencil, &eraser);
     printf("Items Details\n");
-    printf("A4sheet:%d\n",A4sheet);
-    printf("Pen:%d\n",Pen);
-    printf("Pencil:%d\n",Pencil);
-    printf("Eraser:%d\n",Eraser);
+    printf("A4sheet:%d\n", a4sheet);
+    printf("Pen:%d\n", pen);
+    printf("Pencil:%d\n", pencil);
+    printf("Eraser:%d\n", eraser);
     return 0;
 }
