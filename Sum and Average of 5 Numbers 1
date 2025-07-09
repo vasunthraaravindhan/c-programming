@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+int main() {
+    int numbers[5], sum = 0;
+    float average;
+    for(int i = 0; i < 5; i++) {
+        scanf("%d", &numbers[i]);
+        sum += numbers[i];
+    }
+    average = sum / 5.0;
+    printf("Sum of the 5 number is : %d\n", sum);
+    printf("Average of the 5 number is : %.1f\n", average);
+    return 0;
+    }
+
