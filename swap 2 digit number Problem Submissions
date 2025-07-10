@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+    {
+    int num, firstDigit, secondDigit, swapped, temp;
+    scanf("%d", &num);
+    temp = num;
+    while (temp >= 100) {
+        temp /= 10;
+    }
+    if (temp >= 10 && temp <= 99) {
+        firstDigit = temp / 10;
+        secondDigit = temp % 10;
+        swapped = secondDigit * 10 + firstDigit;
+        printf("%d", swapped);
+    } else {
+        printf("STDOUT");
+    }
+    return 0;
+}
+
