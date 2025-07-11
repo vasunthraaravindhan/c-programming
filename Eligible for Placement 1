@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    char name[4];
+    int no,mark; 
+    scanf("%s",name);
+    printf("Name of the Student:%s\n",name);
+    printf("%s",name);
+    scanf("%d",&no);
+    scanf("%d",&mark);
+    if(mark>70)
+    {
+        printf(" is Eligible for Placement");
+    }
+    else if(mark>75)
+    {
+        printf(" is Eligible for Placement");
+    }
+    else
+    {
+        printf(" is Not Eligible for Placement");
+    }
+    return 0;
+}
