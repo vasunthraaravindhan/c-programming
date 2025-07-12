@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int pizza,puff,cd,total;
+    printf("Bill Details\n");
+    scanf("%d",&pizza);
+    printf("No of pizzas:%d\n",pizza);
+    scanf("%d",&puff);
+    printf("No of puffs:%d\n",puff);
+    scanf("%d",&cd);
+    printf("No of cooldrinks:%d\n",cd);
+    total=pizza*100+puff*20+cd*10;
+    printf("Total price=%d\n",total);
+    printf("ENJOY THE SHOW!!!");
+    return 0;
+}
