@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n, num, even = 0, odd = 0;
+    scanf("%d", &n);
+    for(int i = 0; i < n; i++) {
+        scanf("%d", &num);
+        if(num % 2 == 0)
+            even++;
+        else
+            odd++;
+    }
+    if(even == n)
+        printf("Even");
+    else if(odd == n)
+        printf("Odd");
+    else
+        printf("Mixed");
+    return 0;
+}
