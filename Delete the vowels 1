@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+checkVowel(char ch) {
+    if (ch == 'a' || ch == 'A' || ch == 'e' || ch == 'E' ||
+        ch == 'i' || ch == 'I' || ch == 'o' || ch == 'O' ||
+        ch == 'u' || ch == 'U') {
+        return 1; 
+    } else {
+        return 0; 
+    }
+}
+void deleteVowels(char *str) {
+    int i, j;
+    int len = strlen(str); 
+    for (i = 0; i < len; i++) { 
+        if (checkVowel(str[i])) { 
+            for (j = i; j < len; j++) { 
+                str[j] = str[j + 1];
+            }
+            i--;   
+            len--;
+        }
+    }
+}
+int main() {
+    char str[100]; 
+    fgets(str, sizeof(str), stdin);
+    str[strcspn(str, "\n")] = '\0';
+    deleteVowels(str); 
+    printf("%s\n", str);
+    return 0;
+}
